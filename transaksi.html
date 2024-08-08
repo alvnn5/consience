@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PAYMENT</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <center><h1>CONSIENCE</h1></center>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="index.html">HOME</a></li>
+            <li><a href="transaksi.html">PAYMENT</a></li>
+            <li><a href="invoice.html">INVOICE</a></li>
+            <li><a href="kontak.html">CONTACT</a></li>
+        </ul>
+    </nav>
+    <div class="container">
+        <aside class="left">
+            <center>
+                <h2>KATEGORI</h2>
+            </center>
+            <hr>
+            <ul>
+                <li>Tshirt boxy BRUZ</li>
+                <li>Tshirt boxy MAZE</li>
+                <li>Tshirt boxy HOSHI</li>
+            </ul>
+            
+        </aside>
+        <main class="form-transaksi">
+            <hr>
+            <center><h2>Data Transaksi</h2></center>
+            <hr>
+            <form id="transaksiForm">
+                <label for="nama">Nama:</label><br>
+                <input type="text" id="nama" name="nama"><br><br>
+                <label for="alamat">Alamat:</label><br>
+                <textarea id="alamat" name="alamat"></textarea><br><br>
+                <label for="produk">Produk:</label><br>
+                <div>
+                    <input type="checkbox" id="bruz" name="baju" value="BRUZ" data-price="150000">
+                    <label for="bruz">BRUZ</label>
+                </div>
+                <div>
+                    <input type="checkbox" id="maze" name="baju" value="MAZE" data-price="270000">
+                    <label for="maze">MAZE</label>
+                </div>
+                <div>
+                    <input type="checkbox" id="hoshi" name="baju" value="HOSHI" data-price="100000">
+                    <label for="hoshi">HOSHI</label>
+                </div>
+                <br>
+                <label for="jumlah">Jumlah:</label><br>
+                <input type="number" id="jumlah" name="jumlah" min="1" value="1"><br><br>
+                <button type="button" onclick="buatPesanan()">Kirim</button>
+                <button type="reset">Ulang</button>
+            </form>
+        </main>
+        <aside class="right">
+            <center>
+                <h2>INFORMATION</h2>
+            </center>
+            <hr>
+            <ul>
+                <li>Promo 8.8 upto 88%</li>
+                <li>Gratis 1 paket umroh/Bulan</li>
+                <li>Buy 10 get jersey MU ORIGINAL!!</li>
+                <li>Pembelian Dengan KTM Disc 50%</li>
+                <li>Produk Hanya terdapat ALL Size </li>
+                <li>Bahan Katun Sutra Nilon</li>
+                <li>Garansi sablon 5 tahun!!</li>
+                <li>Voucher belanja setiap pembelian</li>
+            </ul>
+        </aside>
+    </div>
+    <script src="script.js"></script>
+    <footer>
+        <MARQUEE><H2>"PROMO TERBATAS DAN HANYA BERLAKU UNTUK PEMBELIAN OFFLINE"</H2></MARQUEE>
+    </footer>
+</body>
+</html>
